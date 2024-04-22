@@ -1,9 +1,10 @@
 const actionSquare = document.querySelectorAll(".actionsquare");
 const displaySquare = document.querySelector(".displayedsquare-wrapper");
-const log = document.querySelector(".log");
+const log = document.querySelector("ul");
 
 actionSquare.forEach((square) => {
   square.addEventListener("click", function () {
+
     let color;
     if (square.classList.contains("green")){
         color = "lime"
@@ -21,5 +22,11 @@ actionSquare.forEach((square) => {
 
 
     displaySquare.appendChild(newSquare)
+
+
+    const currentTime = new Date().toLocaleTimeString()
+    const newLogItem = document.createElement("li")
+    newLogItem.innerHTML = `<strong> ${currentTime} Created a new ${color} square </strong>`
+    log.appendChild(newLogItem)
   });
 });
