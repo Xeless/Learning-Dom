@@ -2,6 +2,8 @@ const actionSquare = document.querySelectorAll(".actionsquare");
 const displaySquare = document.querySelector(".displayedsquare-wrapper");
 const log = document.querySelector("ul");
 
+
+
 actionSquare.forEach((square) => {
   square.addEventListener("click", function () {
 
@@ -30,3 +32,32 @@ actionSquare.forEach((square) => {
     log.appendChild(newLogItem)
   });
 });
+
+document.addEventListener("keydown", function(event){
+
+if(event.code === "Space") {
+
+    const randomBackground = "#" + Math.floor(Math.random()*16777215).toString(16)
+    document.body.style.backgroundColor = randomBackground
+}
+})
+
+document.addEventListener("keydown", function(event){
+
+if (event.key === "i") {
+    while (log.firstChild)
+    log.removeChild(log.firstChild)
+
+}
+
+
+document.addEventListener("keydown", function(event){
+if (event.key === "s") {
+
+    displaySquare.innerHTML = ""
+}
+})
+
+})
+
+
