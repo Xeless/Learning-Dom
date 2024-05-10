@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Manu",
+        "age": 28,
+        "secretIdentity": "Spider-man",
+        "power": ["branleur","tire plus vite que son ombre"]
+
+
+},
+{
+    "name":"Iliess",
+    "age": 23,
+    "secretIdentity": "le vendeur de tapis",
+    "power": ["voler sur un tapis", "voler des sucettes a des enfants"]
+},
+{
+    "name":"Giovanie",
+    "age": 27,
+    "secretIdentity": "Pizza man",
+    "power": ["vendre des formation pas cher","manger des frites"]
+}
+]
+
